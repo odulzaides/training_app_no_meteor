@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Zones Calculator</title>
+
+    <!-- /Bootstrap CSS-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ=="
+          crossorigin="anonymous">
+    <!--  /custom styles-->
+    <link rel="stylesheet" href="./css/styles.css"/>
+
+
+</head>
+<body role="document">
+
+<nav class="navbar navbar-dark bg-inverse navbar-full">
+    <a class="navbar-brand" href="#">You Logo</a>
+    <ul class="nav navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+    </ul>
+    <form class="form-inline pull-xs-right">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-success-outline" type="submit">Search</button>
+    </form>
+</nav>
+<!-- nav -->
+
+<section id="cover">
+    <div id="cover-caption">
+        <div class="container">
+            <div class="col-sm-10">
+                <h1 class="display-6">Welcome to the  Training Zones Calculator</h1>
+
+                <p>Enter your name and email address to get started</p>
+
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" >Name</label>
+                        <input type="text" class="form-control from-control-sm" placeholder="name"/>
+                        <input type=email class="form-control from-control-sm" placeholder="name@email.com"/>
+                    </div>
+                    <a href="#input-section" type="submit" class="btn btn-success btn-lg">Get Started</a>
+                </form>
+                <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">&darr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section-->
+<!-- /user power heart rate input section-->
+
+<form action="" class="form-inline">
+    <div id="input-section" class="form-group">
+        <label class="sr-only" >Name</label>
+        <input id="ftp" type="text" class="form-control from-control-sm" placeholder="enter your FTP"/>
+        <input id="lthr" type="text " class="form-control from-control-sm" placeholder="enter you LTHR"/>
+    </div>
+    <button id="input_submit" type="submit" class="btn btn-success btn-lg">Get Training Zones</button>
+</form>
+<!-- /input section -->
+
+<!-- Table -->
+
+<table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th>Zone</th>
+        <th>Power Zone Low End</th>
+        <th>Power Zone High End</th>
+        <th>Heart Rate Zone Low End</th>
+        <th>Heart Rate Zone High End</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+
+        <th scope="row">1</th>
+        <td>Endurance (Aerobic Threshhold)</td>
+        <td id="end-1"></td>
+        <td id="end-2"></td>
+        <td id="end-3"></td>
+        <td id="end-4"></td>
+
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Tempo</td>
+        <td id="tempo-1"></td>
+        <td id="tempo-2"></td>
+        <td id="tempo-3"></td>
+        <td id="tempo-4"></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Sweet Spot</td>
+        <td id="SS-1"></td>
+        <td id="SS-2"></td>
+        <td id="SS-3"></td>
+        <td id="SS-4"></td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Threshhold</td>
+        <td id="threshhold-1"></td>
+        <td id="threshhold-2"></td>
+        <td id="threshhold-3"></td>
+        <td id="threshhold-4"></td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td>VO2</td>
+        <td id="vo2-1"></td>
+        <td id="vo2-2"></td>
+        <td id="vo2-3"></td>
+        <td id="vo2-4"></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td>Anaerobic</td>
+        <td id="anerobic-1"></td>
+        <td id="anerobic-2"></td>
+        <td id="anerobic-3"></td>
+        <td id="anerobic-4"></td>
+    </tr>
+
+
+    <tr>
+        <th scope="row">7</th>
+        <td>Neuromuscular</td>
+        <td id="np-1">Over</td>
+        <td id="np-2"></td>
+        <td id="np-3">Over</td>
+        <th id="np-4"></th>
+    </tr>
+
+    </tbody>
+</table>
+<!-- /table section -->
+
+
+
+
+<script src="./js/jquery.js"></script>
+
+<!--/Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
+        integrity="sha256-GMscmjNs6MbZvXG2HRjP3MpdOGmXv078SRgH7M723Mc= sha512-1wnhBRtA+POGVA0yREk2RlDbJEdkNvMuRBGjT1FCI5wXmpiQHZWDIB8MpANBWM/GKSPDgCA/7HTrAIFgv70/Jw=="
+        crossorigin="anonymous"></script><script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

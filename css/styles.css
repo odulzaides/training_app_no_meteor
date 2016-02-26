@@ -1,0 +1,25 @@
+/*colors to use
+
+burnt orange base:      230 126 34	#E67E22
+    2 shades darker:    cf6d17
+    2 shades lighter:   eb9950
+    Light gray:         d8d8d8
+    dark gray -         484848
+    
+*/
+html,
+body{
+    height:100%;
+}
+#cover{
+    background: #222 url("../girlincar.jpg") center center no-repeat;
+    background-size: cover;
+    color:#fff;
+    height: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+#cover-caption{
+    width:100%;
+}
